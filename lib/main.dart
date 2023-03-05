@@ -2,18 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:test_app/widgets/manufacturers_list.dart';
 
 void main() {
-  runApp(const VehiclesApp());
+  runApp(VehiclesApp());
 }
 
-class VehiclesApp extends StatefulWidget {
-  const VehiclesApp({super.key});
+class VehiclesApp extends StatelessWidget {
+  VehiclesApp({super.key});
 
-  @override
-  State<VehiclesApp> createState() => _VehiclesAppState();
-}
-
-class _VehiclesAppState extends State<VehiclesApp>{
-  MaterialColor kPrimaryColor = const MaterialColor(
+  final MaterialColor kPrimaryColor = const MaterialColor(
     0xFF37B1B4,
     const <int, Color>{
       50: const Color(0xFF37B1B4),
@@ -45,4 +40,3 @@ class _VehiclesAppState extends State<VehiclesApp>{
     );
   }
 }
-// style: Theme.of(context).textTheme.headlineMedium,
